@@ -42,9 +42,9 @@ class _PackagePreviewCardState extends State<PackagePreviewCard> {
             // Image
             Image.asset(
               images[currentIndex],
-              width:size.width/2 ,
-              height: ResponsiveUI.h(600, context),
-              fit: BoxFit.cover,
+              width:size.width*0.50 ,
+              height: ResponsiveUI.h(550, context),
+              fit: BoxFit.fill,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -58,8 +58,8 @@ class _PackagePreviewCardState extends State<PackagePreviewCard> {
                 SizedBox(height: ResponsiveUI.h(10, context)),
                 // Button
                 Container(
-                  height: ResponsiveUI.h(80, context),
-                  width: ResponsiveUI.w(300, context),
+                  height: ResponsiveUI.h(50, context),
+                  width: ResponsiveUI.w(250, context),
                   decoration: PackageReviewBtn(context),
                   alignment: Alignment.center,
                   child: Text("VISIT PACKAGE",
@@ -73,16 +73,17 @@ class _PackagePreviewCardState extends State<PackagePreviewCard> {
                     IconButton(
                       hoverColor: Colors.transparent,
                       icon: Image(image: AssetImage(left),
-                      height: ResponsiveUI.h(50, context),color: grey),
+                      height: ResponsiveUI.h(50, context),width:ResponsiveUI.w(27, context),color: grey),
                       onPressed: previousImage,
                     ),
                     Text(
                       '${currentIndex + 1} - ${images.length}',
-                      style: TextStyle(fontSize: 18),
+                      style: TextStyle(fontSize: ResponsiveUI.sp(18, context)),
                     ),
                     IconButton(
                       hoverColor: Colors.transparent,
-                      icon: Image(image: AssetImage(right),height: ResponsiveUI.h(50, context),color: grey,),
+                      icon: Image(image: AssetImage(right),height: ResponsiveUI.h(45, context),
+                        width:ResponsiveUI.w(27, context),color: grey,),
                       onPressed: nextImage,
                     ),
                   ],
@@ -90,6 +91,7 @@ class _PackagePreviewCardState extends State<PackagePreviewCard> {
               ],
             ),
             SizedBox(width: ResponsiveUI.w(1, context),)
+            
           ],
         ),
       );

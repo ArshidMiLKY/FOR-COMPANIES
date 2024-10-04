@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hi_abba_website/Constants/colors.dart';
+import 'package:hi_abba_website/Navigation_bar/footer.dart';
 import 'package:hi_abba_website/Navigation_bar/navigation_bar.dart';
 import 'package:hi_abba_website/Responsive/res.dart';
+import 'package:hi_abba_website/components/AboutUs/aboutus_end_card.dart';
+import 'package:hi_abba_website/components/AboutUs/aboutus_number_card.dart';
 import 'package:hi_abba_website/components/AboutUs/aboutus_service.dart';
 import 'package:hi_abba_website/components/AboutUs/aboutus_title_card.dart';
 import 'package:hi_abba_website/components/HomePage/package_preview.dart';
@@ -28,7 +31,13 @@ class _AboutusPageState extends State<AboutusPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               AboutUsTitleCard(),
+              SizedBox(height: ResponsiveUI.h(40, context),),
               AboutusServiceCard(),
+              SizedBox(height: ResponsiveUI.h(40, context),),
+              AboutusNumberCard(),
+              // SizedBox(height: ResponsiveUI.h(40, context),),
+              AboutUsEndCard(),
+              Footer(),
             ],
           ),
         ),

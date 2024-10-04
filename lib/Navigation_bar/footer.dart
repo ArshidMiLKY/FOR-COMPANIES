@@ -23,7 +23,7 @@ class Footer extends StatelessWidget {
                 children: [
                   Container(
                     height: ResponsiveUI.h(140, context),
-                    width: size.width/2,
+                    width: size.width*0.50,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       border: Border(
@@ -34,21 +34,24 @@ class Footer extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(location,
-                          height: ResponsiveUI.h(60, context),
-                        width: ResponsiveUI.w(60, context),),
-                        Text("St. Josephs House, 17x, 2, Gandhi Nagar, St Thomas\n Mount, St Thomas Mount, Chennai - 600016.",
-                        style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontSize: ResponsiveUI.sp(25, context),
-                          fontWeight: FontWeight.w300,
-                          color: white
-                        ),)
+                          height: ResponsiveUI.h(48, context),
+                        width: ResponsiveUI.w(48, context),),
+                        SizedBox(
+                          width: ResponsiveUI.w(350, context),
+                          child: Text("St. Josephs House, 17x, 2, Gandhi Nagar, St Thomas Mount, St Thomas Mount, Chennai - 600016.",
+                          style: TextStyle(
+                            fontFamily: 'Nunito',
+                            fontSize: ResponsiveUI.sp(20, context),
+                            fontWeight: FontWeight.w300,
+                            color: white
+                          ),),
+                        )
                       ],
                     ),
                   ),
                   Container(
                     height: ResponsiveUI.h(200, context),
-                    width: size.width/2,
+                    width: size.width*0.50,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       border: Border(
@@ -68,7 +71,7 @@ class Footer extends StatelessWidget {
                             letterSpacing: ResponsiveUI.w(7, context)
                           ),),
                         Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             SizedBox(
                               child: Row(
@@ -86,7 +89,7 @@ class Footer extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(width: ResponsiveUI.w(100, context),),
+                            // SizedBox(width: ResponsiveUI.w(100, context),),
                             SizedBox(
                               child: Row(
                                 children: [
@@ -132,7 +135,7 @@ class Footer extends StatelessWidget {
               ),
               Container(
                 height: ResponsiveUI.h(340, context),
-                width: size.width/2,
+                width: size.width *0.50,
                 padding: EdgeInsets.only(
                     right: ResponsiveUI.w(110, context),
                     left: ResponsiveUI.w(110, context)),
@@ -180,24 +183,6 @@ class Footer extends StatelessWidget {
                         cursorColor: darkBlue,
                         cursorHeight: ResponsiveUI.h(40, context),
                         decoration: InputDecoration(
-                          prefixIcon: Container(
-                            margin: EdgeInsets.only(right:ResponsiveUI.w(20, context),
-                              left:ResponsiveUI.w(20, context),),
-                            padding: EdgeInsets.only(top: ResponsiveUI.h(4, context),right:ResponsiveUI.w(15, context),),
-                            decoration: BoxDecoration(
-                              border: Border(right: BorderSide(color: shade,width: ResponsiveUI.w(1, context)))
-                            ),
-                            child: Text(
-                              "+91",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontFamily: 'Nunito',
-                                fontSize: ResponsiveUI.sp(30, context),
-                                color: Colors.black,
-                                  letterSpacing: ResponsiveUI.w(5, context)
-                              ),
-                            ),
-                          ),
                           hintText: "00000 00000",
                           fillColor:white,
                           hintStyle: TextStyle(
@@ -206,8 +191,8 @@ class Footer extends StatelessWidget {
                             color: grey,
                             letterSpacing: ResponsiveUI.w(5, context)
                           ),
-                          contentPadding: EdgeInsets.symmetric(
-                            horizontal: ResponsiveUI.h(0, context),
+                          contentPadding: EdgeInsets.only(
+                            left: ResponsiveUI.w(10, context)
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(ResponsiveUI.r(8, context)),

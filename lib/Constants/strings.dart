@@ -31,4 +31,10 @@ String logo="assets/images/logo.png";
 String AbCamera="assets/images/ab_camera.png";
 String AbEvent="assets/images/ab_event.png";
 String AbService="assets/images/ab_service.png";
+String AbEnd="assets/images/ab_end_image.png";
+String AbForward="assets/logos/forward.png";
+
+//Product and services
+String PsTop="assets/images/ps_top.png";
+String PsCamera="assets/images/ps_camera.png";
 

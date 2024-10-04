@@ -21,27 +21,27 @@ BoxDecoration serviceCard(BuildContext context) {
 
 TextStyle serviceTextHome1(BuildContext context){
   return TextStyle(
-    fontFamily: 'Nunito',
-    fontSize: ResponsiveUI.sp(15, context),
-    fontWeight: FontWeight.w500,
+    fontFamily: 'Inter',
+    fontSize: ResponsiveUI.sp(10, context),
+    fontWeight: FontWeight.w400,
     color: pink
   );
 }
 
 TextStyle serviceTextHome2(BuildContext context){
   return TextStyle(
-    fontFamily: 'Nunito',
-    fontSize: ResponsiveUI.sp(15, context),
-    fontWeight: FontWeight.w500,
+    fontFamily: 'Inter',
+    fontSize: ResponsiveUI.sp(10, context),
+    fontWeight: FontWeight.w400,
     color: grey
   );
 }
 
 TextStyle serviceTextHome3(BuildContext context){
   return TextStyle(
-      fontFamily: 'Nunito',
-      fontSize: ResponsiveUI.sp(15, context),
-      fontWeight: FontWeight.w500,
+      fontFamily: 'Inter',
+      fontSize: ResponsiveUI.sp(10, context),
+      fontWeight: FontWeight.w400,
       color: darkBlue
   );
 }
@@ -84,16 +84,16 @@ BoxDecoration PackageReviewBtn(BuildContext context) {
 TextStyle PackageReviewText(BuildContext context){
   return TextStyle(
       fontFamily: 'Nunito',
-      fontSize: ResponsiveUI.sp(70, context),
+      fontSize: ResponsiveUI.sp(40, context),
       fontWeight: FontWeight.w800,
-    letterSpacing: ResponsiveUI.w(5, context)
+    letterSpacing: ResponsiveUI.w(3.5, context),
   );
 }
 
 TextStyle PackageReviewBtnText(BuildContext context){
   return TextStyle(
       fontFamily: 'Nunito',
-      fontSize: ResponsiveUI.sp(25, context),
+      fontSize: ResponsiveUI.sp(18, context),
       fontWeight: FontWeight.w700,
       color: lightShade
   );
@@ -105,19 +105,19 @@ TextStyle PackageReviewBtnText(BuildContext context){
 TextStyle TitleTextWhite(BuildContext context){
   return TextStyle(
       color: Colors.white,
-      fontSize: ResponsiveUI.sp(45, context),
+      fontSize: ResponsiveUI.sp(40, context),
       fontFamily: 'Nunito',
       fontWeight: FontWeight.w800,
-      letterSpacing: ResponsiveUI.w(30, context)
+      letterSpacing: ResponsiveUI.w(18, context)
   );
 }
 TextStyle TitleTextYellow(BuildContext context){
   return TextStyle(
       color: yellow,
-      fontSize: ResponsiveUI.sp(45, context),
+      fontSize: ResponsiveUI.sp(40, context),
       fontFamily: 'Nunito',
       fontWeight: FontWeight.w800,
-      letterSpacing: ResponsiveUI.w(30, context)
+      letterSpacing: ResponsiveUI.w(18, context)
   );
 }
 
@@ -126,20 +126,20 @@ TextStyle TitleTextYellow(BuildContext context){
 TextStyle OneLineTextWhite(BuildContext context){
   return TextStyle(
       color: Colors.white,
-      fontSize: ResponsiveUI.sp(16, context),
+      fontSize: ResponsiveUI.sp(15, context),
       fontFamily: 'Nunito',
       fontWeight: FontWeight.w500,
-      letterSpacing: ResponsiveUI.w(7, context)
+      letterSpacing: ResponsiveUI.w(4.5, context)
   );
 }
 
 TextStyle OneLineTextYellow(BuildContext context){
   return TextStyle(
       color: yellow,
-      fontSize: ResponsiveUI.sp(16, context),
+      fontSize: ResponsiveUI.sp(15, context),
       fontFamily: 'Nunito',
       fontWeight: FontWeight.w500,
-      letterSpacing: ResponsiveUI.w(7, context)
+      letterSpacing: ResponsiveUI.w(4.5, context)
   );
 }
 
@@ -151,7 +151,7 @@ TextStyle SubTitleTextWhite(BuildContext context){
       fontSize: ResponsiveUI.sp(30, context),
       fontFamily: 'Nunito',
       fontWeight: FontWeight.w800,
-      letterSpacing: ResponsiveUI.w(7, context)
+      letterSpacing: ResponsiveUI.w(11, context)
   );
 }
 TextStyle SubTitleTextYellow(BuildContext context){
@@ -160,7 +160,7 @@ TextStyle SubTitleTextYellow(BuildContext context){
       fontSize: ResponsiveUI.sp(30, context),
       fontFamily: 'Nunito',
       fontWeight: FontWeight.w800,
-      letterSpacing: ResponsiveUI.w(7, context)
+      letterSpacing: ResponsiveUI.w(11, context)
   );
 }
 

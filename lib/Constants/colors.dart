@@ -10,3 +10,11 @@ const pink = const Color(0xffE90074);
 const shade = const Color(0xffD6BD98);
 const white = const Color(0xffFFFFFF);
 const red = const Color(0xffff3333);
+
+
+//product and service container
+const skyBlue = const Color(0xffCAEEFF);
+const lightPink = const Color(0xffFFE1F7);
+const lightGreen = const Color(0xff94FFD8);
+const sandal = const Color(0xffFFEFD8);
+const crimson = const Color(0xffCC4333);

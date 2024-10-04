@@ -9,22 +9,28 @@ class AboutUsTitleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    final isMobile = size.width <= 1000;
     return Container(
-      margin: EdgeInsets.only(top: ResponsiveUI.h(50, context)),
-      width: size.width -100,
-      height: ResponsiveUI.h(800, context),
+      width: size.width,
+      height: size.width *0.30,
       child: Stack(
         children: [
           Positioned(
-            // left: ResponsiveUI.w(120, context),
-            top: ResponsiveUI.h(0, context),
+            top: ResponsiveUI.h(50, context),
+            left: ResponsiveUI.w(100, context),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("ABOUT",style: aboutUsTitleText(context),),
-                SizedBox(height: ResponsiveUI.h(1, context),),
-                Text("U S",style: aboutUsTitleText(context),),
-                SizedBox(height: ResponsiveUI.h(100, context),),
+                RichText(text:
+                TextSpan(
+                    children: [
+                      TextSpan(text: "ABOUT\n",style: aboutUsTitleText1(context),),
+                      TextSpan(text: "US",
+                        style: aboutUsTitleText2(context),)
+                    ]
+                )),
+                SizedBox(height: ResponsiveUI.h(40, context),),
+                isMobile?SizedBox():
                 RichText(text:
                 TextSpan(
                     children: [
@@ -36,22 +42,35 @@ class AboutUsTitleCard extends StatelessWidget {
               ],
             )
           ),
+          isMobile?Positioned(
+            // left: ResponsiveUI.w(isMobile?355:500, context),
+            right: ResponsiveUI.w(250, context),
+            bottom: ResponsiveUI.h(0, context),
+            child: Container(
+              height: ResponsiveUI.h(517, context),
+              width: ResponsiveUI.w(626, context),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(ResponsiveUI.r(50, context)),
+                  image: DecorationImage(image: AssetImage(AbCamera))
+              ),
+            ),):SizedBox(),
+          isMobile?SizedBox():
           Positioned(
-              right: ResponsiveUI.w(700, context),
+              left: ResponsiveUI.w(isMobile?355:500, context),
+              // right: ResponsiveUI.w(isMobile?0:900, context),
               bottom: ResponsiveUI.h(0, context),
               child: Container(
-                height: ResponsiveUI.h(617, context),
-                width: ResponsiveUI.w(726, context),
+                height: ResponsiveUI.h(517, context),
+                width: ResponsiveUI.w(626, context),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(ResponsiveUI.r(50, context)),
                   image: DecorationImage(image: AssetImage(AbCamera))
                 ),
-                // child: Image.asset(AbCamera,height: ResponsiveUI.h(617, context),
-                //   width: ResponsiveUI.w(726, context),),
               )),
+          isMobile?SizedBox():
           Positioned(
-            right: ResponsiveUI.w(0, context),
-            bottom: ResponsiveUI.h(0, context),
+            right: ResponsiveUI.w(200, context),
+            bottom  : ResponsiveUI.h(0, context),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -76,7 +95,7 @@ class AboutUsTitleCard extends StatelessWidget {
               ],
             ),
 
-          ),
+          )
         ],
       ),
     );

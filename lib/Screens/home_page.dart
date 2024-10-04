@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Nunito',
-                  fontSize: ResponsiveUI.sp(20, context),
+                  fontSize: ResponsiveUI.sp(18, context),
                   fontWeight: FontWeight.w500,
                   color: lightBlue
                 ),
@@ -64,10 +64,8 @@ class _HomePageState extends State<HomePage> {
               ImageCarouselSlider(),
               SizedBox(height: ResponsiveUI.h(50, context) ,),
               PackagePreviewCard(),
-              SizedBox(
-                height: ResponsiveUI.h(20, context),
-              ),
               Footer(),
+
             ],
           ),
         ),

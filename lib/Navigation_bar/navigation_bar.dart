@@ -72,7 +72,7 @@ class _NavBarItemState extends State<NavBarItem> {
                 : (widget.route == ModalRoute.of(context)?.settings.name
                 ? yellow
                 : white),
-            fontSize: ResponsiveUI.sp(20, context),
+            fontSize: ResponsiveUI.sp(15, context),
             fontFamily: 'Inter',
             fontWeight: FontWeight.w600,
           ),

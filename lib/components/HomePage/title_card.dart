@@ -16,56 +16,93 @@ class TitleCard extends StatelessWidget {
       return degrees * pi / 180;
     }
     return Container(
-      height: ResponsiveUI.h(700, context),
+      height: ResponsiveUI.h(520, context),
       width: size.width,
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage(background),fit: BoxFit.cover),
+        image: DecorationImage(image: AssetImage(background),fit: BoxFit.fill),
       ),
       child: Stack(
         children: [
           Positioned(
-              left:ResponsiveUI.w(100, context),
-              top: ResponsiveUI.h(100, context),
+              right: ResponsiveUI.w(133, context),
+              bottom: ResponsiveUI.h(0, context),
+              child: Image(image: AssetImage(shadow),
+                height: ResponsiveUI.h(375, context),
+                width: ResponsiveUI.w(400, context),fit: BoxFit.fill,)),
+          Positioned(
+            bottom: ResponsiveUI.h(235, context),
+            top: ResponsiveUI.h(137, context),
+            right: ResponsiveUI.w(514, context),
+            child: Transform.rotate(
+              angle: degreesToRadians(-18.33),
+              child: Image(image: AssetImage(birds),
+                height: ResponsiveUI.h(148, context),
+                width: ResponsiveUI.w(121, context),fit: BoxFit.contain,),
+
+            ),),
+          Positioned(
+            top: ResponsiveUI.h(0, context),
+            right: ResponsiveUI.w(319, context),
+            child: Transform.rotate(
+              angle: degreesToRadians(-18.33),
+              child: Image(image: AssetImage(birds),
+                height: ResponsiveUI.h(230, context),
+                width: ResponsiveUI.w(173, context),fit: BoxFit.contain,),
+
+            ),),
+          Positioned(
+            top: ResponsiveUI.h(-36, context),
+            right: ResponsiveUI.w(118, context),
+            child: Transform.rotate(
+              angle: degreesToRadians(-18.33),
+              child: Image(image: AssetImage(birds),
+                height: ResponsiveUI.h(214, context),
+                width: ResponsiveUI.w(160, context),fit: BoxFit.contain,),
+
+            ),),
+          Positioned(
+              left:ResponsiveUI.w(104, context),
+              top: ResponsiveUI.h(64, context),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
                       Image(image: AssetImage(logo),
-                        height: ResponsiveUI.h(250, context),
-                        width: ResponsiveUI.w(250, context),),
+                        height: ResponsiveUI.h(155, context),
+                        width: ResponsiveUI.w(169, context),fit: BoxFit.contain,),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           RichText(text: TextSpan(
                               children:[
                                 TextSpan(
-                                  text: "H",
-                                  style: TitleTextWhite(context)
+                                    text: "H",
+                                    style: TitleTextWhite(context)
                                 ),
                                 TextSpan(text: "i",
-                                  style: TitleTextYellow(context)),
+                                    style: TitleTextYellow(context)),
                                 TextSpan(
-                                  text: " ABBA",
-                                  style: TitleTextWhite(context)
+                                    text: " ABBA",
+                                    style: TitleTextWhite(context)
                                 ),
                               ]
                           )),
                           Container(height: ResponsiveUI.h(2, context),
-                            width: ResponsiveUI.w(360, context),
+                            width: ResponsiveUI.w(280, context),
                             color: Colors.white,),
                           SizedBox(height: ResponsiveUI.h(10, context),),
                           RichText(text: TextSpan(
                               children:[
                                 TextSpan(
-                                  text: "Fully Human & Fully Al",
-                                  style: OneLineTextWhite(context)
+                                    text: "Fully Human & Fully Al",
+                                    style: OneLineTextWhite(context)
                                 ),
                                 TextSpan(text: "i",
-                                  style: OneLineTextYellow(context)),
+                                    style: OneLineTextYellow(context)),
                                 TextSpan(
-                                  text: "ve",
-                                  style: OneLineTextWhite(context)
+                                    text: "ve",
+                                    style: OneLineTextWhite(context)
                                 ),
                               ]
                           )),
@@ -73,60 +110,60 @@ class TitleCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: ResponsiveUI.h(32, context),),
+                  SizedBox(height: ResponsiveUI.h(30, context),),
                   Row(
                     children: [
                       RichText(text: TextSpan(
                           children:[
                             TextSpan(
-                              text: "MUlT",
-                              style: SubTitleTextWhite(context)
+                                text: "MUlT",
+                                style: SubTitleTextWhite(context)
                             ),
                             TextSpan(text: "i",
-                              style: SubTitleTextYellow(context)),
+                                style: SubTitleTextYellow(context)),
                             TextSpan(
-                              text: "VERSE OF\n",
-                              style: SubTitleTextWhite(context)
+                                text: "VERSE OF\n",
+                                style: SubTitleTextWhite(context)
                             ),
                             TextSpan(
-                              text: "CREAT",
-                              style: SubTitleTextWhite(context)
-                            ),
-                            TextSpan(text: "i",
-                              style: SubTitleTextYellow(context)),
-                            TextSpan(
-                              text: "VE POSS",
-                              style: SubTitleTextWhite(context)
+                                text: "CREAT",
+                                style: SubTitleTextWhite(context)
                             ),
                             TextSpan(text: "i",
-                              style: SubTitleTextYellow(context)),
+                                style: SubTitleTextYellow(context)),
                             TextSpan(
-                              text: "B",
-                              style: SubTitleTextWhite(context)
+                                text: "VE POSS",
+                                style: SubTitleTextWhite(context)
                             ),
                             TextSpan(text: "i",
-                              style: SubTitleTextYellow(context)),
+                                style: SubTitleTextYellow(context)),
                             TextSpan(
-                              text: "L",
-                              style: SubTitleTextWhite(context)
+                                text: "B",
+                                style: SubTitleTextWhite(context)
                             ),
                             TextSpan(text: "i",
-                              style: SubTitleTextYellow(context)),
+                                style: SubTitleTextYellow(context)),
                             TextSpan(
-                              text: "T",
-                              style: SubTitleTextWhite(context)
+                                text: "L",
+                                style: SubTitleTextWhite(context)
                             ),
                             TextSpan(text: "i",
-                              style: SubTitleTextYellow(context)),
+                                style: SubTitleTextYellow(context)),
                             TextSpan(
-                              text: "ES",
+                                text: "T",
+                                style: SubTitleTextWhite(context)
+                            ),
+                            TextSpan(text: "i",
+                                style: SubTitleTextYellow(context)),
+                            TextSpan(
+                                text: "ES",
                                 style: SubTitleTextWhite(context)
                             ),
                           ]
                       )),
                     ],
                   ),
-                  SizedBox(height: ResponsiveUI.h(32, context),),
+                  SizedBox(height: ResponsiveUI.h(20, context),),
                   Row(
                     children: [
                       InkWell(
@@ -134,8 +171,8 @@ class TitleCard extends StatelessWidget {
                           Navigator.pushNamed(context, '/aboutus');
                         },
                         child: Container(
-                          height: ResponsiveUI.h(70, context),
-                          width: ResponsiveUI.w(150, context),
+                          height: ResponsiveUI.h(40, context),
+                          width: ResponsiveUI.w(120, context),
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                               color:white.withOpacity(0.3),
@@ -145,10 +182,10 @@ class TitleCard extends StatelessWidget {
                           child: Text("About us",
                             style: TextStyle(
                               color: lightShade,
-                              fontSize: ResponsiveUI.sp(25, context),
+                              fontSize: ResponsiveUI.sp(20, context),
                               fontFamily: 'Nunito',
                               fontWeight: FontWeight.w800,
-                              // letterSpacing: ResponsiveUI.w(7, context)
+                              // letterSpacing: ResponsiveUI.w(7, context),
                             ),),
                         ),
                       ),
@@ -156,42 +193,6 @@ class TitleCard extends StatelessWidget {
                   ),
                 ],
               )),
-          Positioned(
-              right: ResponsiveUI.w(150, context),
-              bottom: ResponsiveUI.h(0, context),
-              child: Image(image: AssetImage(shadow),
-                height: ResponsiveUI.h(450, context),
-                width: ResponsiveUI.w(500, context),)),
-          Positioned(
-            bottom: ResponsiveUI.h(300, context),
-            right: ResponsiveUI.w(500, context),
-            child: Transform.rotate(
-              angle: degreesToRadians(-18.33),
-              child: Image(image: AssetImage(birds),
-                height: ResponsiveUI.h(200, context),
-                width: ResponsiveUI.w(150, context),),
-
-            ),),
-          Positioned(
-            top: ResponsiveUI.h(65, context),
-            right: ResponsiveUI.w(350, context),
-            child: Transform.rotate(
-              angle: degreesToRadians(-18.33),
-              child: Image(image: AssetImage(birds),
-                height: ResponsiveUI.h(300, context),
-                width: ResponsiveUI.w(200, context),),
-
-            ),),
-          Positioned(
-            top: ResponsiveUI.h(-50, context),
-            right: ResponsiveUI.w(150, context),
-            child: Transform.rotate(
-              angle: degreesToRadians(-18.33),
-              child: Image(image: AssetImage(birds),
-                height: ResponsiveUI.h(400, context),
-                width: ResponsiveUI.w(250, context),),
-
-            ),),
         ],
       ),
     );

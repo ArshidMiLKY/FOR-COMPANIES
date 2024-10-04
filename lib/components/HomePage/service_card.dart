@@ -48,7 +48,7 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-        height: ResponsiveUI.h(600, context),
+        height: size.width *0.25 +50,
         width: size.width,
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
@@ -58,23 +58,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
             children: [
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(30, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                    height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -88,23 +89,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -118,23 +120,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -148,23 +151,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -178,23 +182,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -208,23 +213,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -238,23 +244,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -268,23 +275,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -298,23 +306,24 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
               ),
               //wedding
               Container(
-                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),),
+                margin: EdgeInsets.only(right: ResponsiveUI.w(60, context),
+                    left: ResponsiveUI.w(60, context)),
                 padding: EdgeInsets.only(
-                  top: ResponsiveUI.h(20, context),
+                  // top: ResponsiveUI.h(20, context),
                   left: ResponsiveUI.w(10, context),
                   right: ResponsiveUI.w(10, context),
-                  bottom: ResponsiveUI.h(20, context),
+                  // bottom: ResponsiveUI.h(20, context),
                 ),
-                height: ResponsiveUI.h(500, context),
-                width: ResponsiveUI.w(300, context),
+                height: size.width *0.25,
+                width: size.width *0.20,
                 decoration: serviceCard(context),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(background,fit: BoxFit.cover,
-                      width: ResponsiveUI.w(280, context),
-                      height: ResponsiveUI.h(380, context),),
+                    Image.asset(background,fit: BoxFit.fill,
+                      width: size.width *0.20,
+                      height: size.width *0.25 -ResponsiveUI.h(70, context),),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -326,6 +335,7 @@ class _ServiceCardPageState extends State<ServiceCardPage> {
                   ],
                 ),
               ),
+
             ],
           ),
         ),
