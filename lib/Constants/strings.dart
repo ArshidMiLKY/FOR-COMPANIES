@@ -37,4 +37,10 @@ String AbForward="assets/logos/forward.png";
 //Product and services
 String PsTop="assets/images/ps_top.png";
 String PsCamera="assets/images/ps_camera.png";
+String OurService="assets/images/our_service.png";
+String blur="assets/images/photo_blur.png";
+String top="assets/images/photo_main.png";
+
+//Package
+String PackageTick="assets/logos/tick.png";
 

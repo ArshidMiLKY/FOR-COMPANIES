@@ -12,7 +12,7 @@ class AboutUsTitleCard extends StatelessWidget {
     final isMobile = size.width <= 1000;
     return Container(
       width: size.width,
-      height: size.width *0.30,
+      height: size.width *0.30 +50,
       child: Stack(
         children: [
           Positioned(
@@ -44,8 +44,9 @@ class AboutUsTitleCard extends StatelessWidget {
           ),
           isMobile?Positioned(
             // left: ResponsiveUI.w(isMobile?355:500, context),
-            right: ResponsiveUI.w(250, context),
-            bottom: ResponsiveUI.h(0, context),
+            right: ResponsiveUI.w(0, context),
+            bottom: ResponsiveUI.h(10, context),
+            top: ResponsiveUI.h(10, context),
             child: Container(
               height: ResponsiveUI.h(517, context),
               width: ResponsiveUI.w(626, context),
@@ -53,8 +54,7 @@ class AboutUsTitleCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(ResponsiveUI.r(50, context)),
                   image: DecorationImage(image: AssetImage(AbCamera))
               ),
-            ),):SizedBox(),
-          isMobile?SizedBox():
+            ),):
           Positioned(
               left: ResponsiveUI.w(isMobile?355:500, context),
               // right: ResponsiveUI.w(isMobile?0:900, context),
@@ -64,9 +64,10 @@ class AboutUsTitleCard extends StatelessWidget {
                 width: ResponsiveUI.w(626, context),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(ResponsiveUI.r(50, context)),
-                  image: DecorationImage(image: AssetImage(AbCamera))
+                    image: DecorationImage(image: AssetImage(AbCamera))
                 ),
               )),
+
           isMobile?SizedBox():
           Positioned(
             right: ResponsiveUI.w(200, context),

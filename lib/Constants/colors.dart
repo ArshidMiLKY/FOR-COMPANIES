@@ -18,3 +18,7 @@ const lightPink = const Color(0xffFFE1F7);
 const lightGreen = const Color(0xff94FFD8);
 const sandal = const Color(0xffFFEFD8);
 const crimson = const Color(0xffCC4333);
+
+
+//Package
+const darkWhite = const Color(0xffEEEEEE);
